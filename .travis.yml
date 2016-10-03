@@ -5,6 +5,11 @@ jdk:
 
 install: ant
 
+
+notifications:
+  on_success: never
+  on_failure: always
+
 deploy:
   provider: releases
   api_key:
