@@ -12,4 +12,5 @@ deploy:
   file: build/release/EspStrackTraceDecoder.jar
   skip_cleanup: true
   on:
+    tags: off
     repo: littleyoda/EspStrackTraceDecoder
