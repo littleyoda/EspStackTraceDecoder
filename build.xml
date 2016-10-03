@@ -18,4 +18,8 @@
             <fileset dir="build/classes"/>
         </jar>
     </target>
+    
+    <target name="test">
+    </target>
+    
 </project>
