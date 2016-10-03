@@ -1,11 +1,15 @@
 language: java
+
 jdk:
 - oraclejdk8
+
 install: ant
+
 deploy:
   provider: releases
   api_key:
     secure: WpBP/tLBpGr0pseiBpF7WfMge+lzduZIWDYUcWF3zLwpt9E9OGwa78pshih2xZiyHKcGN/59lnPiqLCwk8wqQ5bICMLDwq15Z4Fb4mgpqNhq94NG+H4oi7xMyIRct5fq+Yiixa7m2HfpP7EDXwbQosT6jwJgRFMApBa7wwv3CPAYeleagy2BMADG0yvrAU+LzhBus94Kd5wTaa8qePlzIG7ExWqJx42lkvaIMXYPVFtuPc1EMeJIvKwAibw+DJB636q6/f3IpYMUOzptLRyIEMuyjYVjoZ6dy6OZ2nEssTVBExqNBTuEIwkKxoA/GvT/U77QrhdXLOLtvVcalWgIIAM3CYcqxYT7u8PYzvo7Ek5Hla3A5fTpfbFyZ2YktawORTvnCpten7QOcLtMFYs64nRC62KH3yNKIGuuqCNTMEOPXyL4DNOqa01Kzfiik3aJD9jNkBq9OLl2MSUx+Zh9klpBTybXj8rthntWT3Eo7FY2BQD+xee+eyK23uIaBeFK5Oq0Uvo/RrPZBiz/iIzXlnxNhr9pt3xyasULaXCnFUH0A2Awpq1C9rEfty9k2OC942yuRx4dOnqXWejdXfOlykJHMJGsxEcaNu+iTZzPmXNoutPmSPWPlwsB5nSgdjFbUCCM3HQWfP3b+0mbCFf/UvwwegEukxQqb8xcmyeJGpY=
   file: build/release/EspStrackTraceDecoder.jar
+  skip_cleanup: true
   on:
     repo: littleyoda/EspStrackTraceDecoder
