@@ -63,7 +63,7 @@ public class EspStrackTraceDecoder  {
 	}
 
 	private String analyseException(String content){
-		Pattern p = Pattern.compile("Exception \\((28)\\):");
+		Pattern p = Pattern.compile("Exception \\(([0-9]*)\\):");
 		Matcher m = p.matcher(content);
 		String description = "Exception Cause: "; 
 		if (!m.find()) {
